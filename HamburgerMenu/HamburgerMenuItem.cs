@@ -25,15 +25,15 @@ namespace HamburgerMenu
         public static readonly DependencyProperty TextProperty =
             DependencyProperty.Register("Text", typeof(string), typeof(HamburgerMenuItem), new PropertyMetadata(String.Empty));
 
-
-        public ImageSource Icon
+        
+        public string Icon
         {
-            get { return (ImageSource)GetValue(IconProperty); }
+            get { return (string)GetValue(IconProperty); }
             set { SetValue(IconProperty, value); }
         }
 
         public static readonly DependencyProperty IconProperty =
-            DependencyProperty.Register("Icon", typeof(ImageSource), typeof(HamburgerMenuItem), new PropertyMetadata(null));
+            DependencyProperty.Register("Icon", typeof(string), typeof(HamburgerMenuItem), new PropertyMetadata(null));
 
         public Brush SelectionIndicatorColor
         {
